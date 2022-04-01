@@ -27,5 +27,11 @@ Person.prototype.calcAge2 = function () {out(2021 - this.birthYear)};
 pers2.calcAge2();
 out(Person.prototype);
 
+const nmbrs = [1,2,3,"2","3",4,1,2,3];
 
+Array.prototype.unique = function () {
+  return [...new Set(this)];
+}
 
+const xx = nmbrs.unique();
+out(xx);
